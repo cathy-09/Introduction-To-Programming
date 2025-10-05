@@ -1,4 +1,4 @@
-# 📚Introduction-To-Programming📚
+# 📚Introduction-To-Programming
 **Специалност:** **Софтуерно инженерство (СИ)** 🎓 <br>
 **Курс:** **I**  
 **Група:** **6**  
