@@ -8,7 +8,7 @@
 | 34                                                          | 0                                                           |
 
 `Решение:`
-'''cpp
+```cpp
 #include <iostream>
 using namespace std;
 int main()
@@ -24,4 +24,4 @@ int main()
         cout << "" << false << "";
     }
 }
-'''
+```
