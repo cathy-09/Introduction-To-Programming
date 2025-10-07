@@ -111,3 +111,64 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task4**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task4.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 5: Да се напише програма, която приема 4 цели числа и отпечатва 1, ако числата образуват геометрична прогресия в реда, в който са въведени, и 0, ако съответно не образуват.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 1 4 5 8                                                          | 0                                                           |
+| 2 4 6 8                                                          | 1                                                           |
+
+> [!WARNING]
+> Вторите примерни входни данни отговарят на условието за аритметична прогересия.
+
+`Решение 1:`
+```cpp
+//pt.1
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if ((pow(b, 2) == a * c) && (pow(c, 2) == b * d))
+    {
+        cout << "" << true << ""; 
+    }
+    else
+    {
+        cout << "" << false << "";
+    }
+}
+```
+
+`Решение 2:`
+```cpp
+//pt.2
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if (a + d == c + b)
+    {
+        cout << "" << true << ""; 
+    }
+    else
+    {
+        cout << "" << false << "";
+    }
+}
+
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task5 Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt1.cpp)
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task5 Pt2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt2.cpp)
