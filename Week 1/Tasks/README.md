@@ -144,6 +144,10 @@ int main()
 }
 ```
 
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task5 Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt1.cpp)
+
 `Решение 2:`
 ```cpp
 //pt.2
@@ -164,10 +168,6 @@ int main()
 }
 
 ```
-
-> [!NOTE]
-> Може да откриете cpp файл тук:
->  [**Task5 Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt1.cpp)
 
 > [!NOTE]
 > Може да откриете cpp файл тук:
