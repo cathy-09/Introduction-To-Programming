@@ -29,6 +29,6 @@ int main()
 ---
 **NOTE**
 
-Може да откриете cpp файл тук: [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%201](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task1.cpp))
+Може да откриете cpp файл тук: [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task1.cpp)
 
 ---
