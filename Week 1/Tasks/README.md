@@ -172,3 +172,35 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task5 Pt2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt2.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 6: Въвежда се цяло число n. Да се изведе 1, ако n се дели на 2, но не се дели на 3, и 0 в противен случай.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 4                                                          | 1                                                           |
+| 6                                                          | 0                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    if (n % 2 == 0 && n % 3 == 1)
+    {
+        cout << "" << true << ""; 
+    }
+    else
+    {
+        cout << "" << false << "";
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task6**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task6.cpp)
+
