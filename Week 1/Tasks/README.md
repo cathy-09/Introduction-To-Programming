@@ -80,3 +80,34 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task3.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Да се прочетат от конзолата 4 реални числа - a, b, c, d. Да се изведе 1, ако интервалите [a, b] и [c, d] се пресичат, и 0, ако не се пресичат. `
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 1 4 5 8                                                          | 0                                                           |
+| 1 10 5 12                                                          | 1                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a, b, c, d;
+    cin >> a >> b >> c >> d;
+    if ((b < c) || (d < a))
+    {
+        cout << "" << false << "";
+    }
+    else
+    {
+        cout << "" << true << "";
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task4**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task4.cpp)
