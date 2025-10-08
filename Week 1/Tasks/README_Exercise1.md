@@ -28,7 +28,7 @@ int main()
 ```
 
 > [!NOTE]
-> Може да откриете cpp файл тук:
->  [**Task1Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task1Exercise1.cpp)
+> Може да откриете допълнителните задачи тук:
+>  [**Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/README_Exercise1.md)
 
 <hr style="border-width: 5px !important;">
