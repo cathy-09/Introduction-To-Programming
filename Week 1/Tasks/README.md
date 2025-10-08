@@ -330,6 +330,8 @@ int main()
 > Може да откриете cpp файл тук:
 >  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task10.cpp)
 
+<hr style="border-width: 5px !important;">
+
 > [!IMPORTANT]
 > Допълнителни задачи може да откриете тук:
 > [**Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task10.cpp)
