@@ -82,3 +82,24 @@ int main()
 >  [**Task3Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task3Exercise1.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 4: Въведете четирицифрено число. Неговото огледално число получаваме, от цифрите на даденото, записани в обратен ред. Отпечатайте остатъка при деление на 7 на огледалното число на даденото.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 689                                                          | 6                                                           |
+| 276                                                          | 0                                                           |
+
+> [!TIP]
+> Огледалното е 986 и 986 ≡ 6 (𝑚𝑜𝑑 7)
+> Огледалното е 672 и 672 ≡ 0 (𝑚𝑜𝑑 7)
+
+`Решение:`
+```cpp
+
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task4Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task4Exercise1.cpp)
+
+<hr style="border-width: 5px !important;">
