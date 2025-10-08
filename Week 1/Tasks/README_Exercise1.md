@@ -29,6 +29,6 @@ int main()
 
 > [!NOTE]
 > Може да откриете cpp файл тук:
->  [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task1.cpp)
+>  [**Task1Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task1.cpp)
 
 <hr style="border-width: 5px !important;">
