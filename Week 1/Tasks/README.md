@@ -334,4 +334,4 @@ int main()
 
 > [!IMPORTANT]
 > Допълнителни задачи може да откриете тук:
-> [**Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task10.cpp)
+> [**Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/README_Exercise1.md)
