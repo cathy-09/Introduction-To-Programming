@@ -40,3 +40,23 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task1.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 2: Напишете програма, която въвежда от стандартния вход 1 символ. Изолзвайки тернарен оператор, установете дали въведения символ е малка латинска буква.`
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main() 
+{
+	char sybol;
+	cin >> sybol;
+	cout << "" << ((sybol >= 'a' && sybol <= 'z') ? true : false) << "";
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task2.cpp)
