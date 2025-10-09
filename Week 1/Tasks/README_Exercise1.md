@@ -252,13 +252,18 @@ int main()
 	const double epsilon = 0.0002;
 	double a, b;
 	cin >> a >> b;
-	if ((a - b) < epsilon)
+	double abs = (a - b);
+	if (abs < 0)
 	{
-		cout << "" << true << "";
+		abs = abs * (-1);
+	}
+	if (abs > epsilon)
+	{
+		cout << "" << false << "";
 	}
 	else
 	{
-		cout << "" << false << "";
+		cout << "" << true << "";
 	}
 }
 ```
