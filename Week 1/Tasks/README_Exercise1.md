@@ -196,3 +196,44 @@ int main()
 >  [**Task6Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task6Exercise1.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 7: Нека имаме две дефинирани променливи от тип int. Да се разменят техните стойности.`
+> [!TIP]
+> Това може да стане по няколко начина, включително с и без употреба на помощна променлива.
+`Решение 1:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b, temp = 0;
+	cin >> a >> b;
+	temp = a;
+	a = b;
+	b = temp;
+	cout << "A:" << a << "\n";
+	cout << "B:" << b << "";
+}
+```
+`Решение 2:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a, b;
+	cin >> a >> b;
+	a = a + b;
+	b = a - b;
+	a = a - b;
+	cout << "A:" << a << "\n";
+	cout << "B:" << b << "";
+}
+```
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task7Exercise1Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt1.cpp)
+> 
+>  [**Task7Exercise1Pt2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt2.cpp)
+
+<hr style="border-width: 5px !important;">
