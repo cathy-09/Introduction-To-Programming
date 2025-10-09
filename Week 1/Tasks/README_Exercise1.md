@@ -158,3 +158,23 @@ int main()
 >  [**Task5Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task5Exercise1.cpp)
 
 <hr style="border-width: 5px !important;">
+
+<hr style="border-width: 5px !important;">
+
+`Задача 6: Въведете две цели числа. Отпечатайте по-голямото от тях. Ако са равни, отпечатайте символа за равенство.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 257 257                                                          | =                                                           |
+| 468 123                                                          | 468                                                           |
+| 8732 486553                                                          | 486553                                                           |
+
+`Решение:`
+```cpp
+
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task6Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task6Exercise1.cpp)
+
+<hr style="border-width: 5px !important;">
