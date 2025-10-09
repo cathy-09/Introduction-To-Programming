@@ -239,3 +239,31 @@ int main()
 > [**Task7Exercise1Pt2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt2.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 8: Въведете две числа с плаваща запетая. Проверете дали те са равни и върнете 1, ако са, и 0, ако не са.`
+> [!TIP]
+> Намерете случай, за който въведените числа са различни, но програмата казва, че са еднакви
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	const double epsilon = 0.0002;
+	double a, b;
+	cin >> a >> b;
+	if ((a - b) < epsilon)
+	{
+		cout << "" << true << "";
+	}
+	else
+	{
+		cout << "" << false << "";
+	}
+}
+```
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+> [**Task8Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task8Exercise1.cpp)
+
+<hr style="border-width: 5px !important;">
