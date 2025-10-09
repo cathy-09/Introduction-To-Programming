@@ -215,6 +215,9 @@ int main()
 	cout << "B:" << b << "";
 }
 ```
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+> [**Task7Exercise1Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt1.cpp)
 `Решение 2:`
 ```cpp
 #include <iostream>
@@ -231,9 +234,6 @@ int main()
 }
 ```
 > [!NOTE]
-> Може да откриете допълнителните задачи тук:
-> [**Task7Exercise1Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt1.cpp)
-> 
 > Може да откриете допълнителните задачи тук:
 > [**Task7Exercise1Pt2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task7Exercise1Pt2.cpp)
 
