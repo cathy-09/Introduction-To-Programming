@@ -195,9 +195,9 @@ int main()
 > [!TIP]
 > **Inside:** Ако е изпълнено `distance < r`.
 >
-> **On the border:** `d == r`
+> **On the border:** Ако е изпълнено `distance == r`
 >
-> **Outside:** `d > r`.
+> **Outside:** Ако е изпълнено `distance > r`.
 
 > [!NOTE]
 > Може да откриете cpp файл тук:
