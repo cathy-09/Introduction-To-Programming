@@ -117,3 +117,44 @@ int main()
 >  [**Task4Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task4Exercise1.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 5: Въведете символ. Отпечатайте 1, ако е английска съгласна буква, и 0 в противен случай.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| a                                                          | 0                                                           |
+| b                                                          | 1                                                           |
+| C                                                          | 1                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    char sybol;
+    cin >> sybol;
+    if (!(sybol == 'A' 
+        || sybol == 'E' 
+        || sybol == 'O' 
+        || sybol == 'I' 
+        || sybol == 'U'
+        || sybol == 'a'
+        || sybol == 'e'
+        || sybol == 'o'
+        || sybol == 'i'
+        || sybol == 'u'))
+    {
+        cout << "" << false << "";
+    }
+    else
+    {
+        cout << "" << true << "";
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task5Exercise1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFilesExercise1/Task5Exercise1.cpp)
+
+<hr style="border-width: 5px !important;">
