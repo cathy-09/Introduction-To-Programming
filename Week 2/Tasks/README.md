@@ -60,3 +60,42 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task2.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 3: Напишете програма, която приема от стандартния вход 1 символ. Ако той е малка буква, извежда съответната голяма, а ако е голяма буква, извежда съответната малка, а ако не е буква, да изведе съобщение за невалиден символ.`
+
+> [!TIP]
+> В ASCII таблицата разликата между малка и голяма буква е точно 32.
+> 
+> Например: 'a' = 97, 'A' = 65.
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main() 
+{
+	char sybol;
+	cin >> sybol;
+	if (sybol >= 'a' && sybol <= 'z')
+	{
+		cout << "" << (char)(sybol - 'a' + 'A') << "";
+	}
+	else if (sybol >= 'a' && sybol <= 'z')
+	{
+		cout << "" << (char)(sybol - 'A' + 'a') << "";
+	}
+	else
+	{
+		cout << "Invalid!";
+	}
+}
+```
+> [!IMPORTANT]
+> `(char)...`
+> Изрично преобразуване: Преобразуванията се извършват само когато са изрично посочени от програмиста
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task3.cpp)
