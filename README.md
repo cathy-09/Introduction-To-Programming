@@ -7,4 +7,4 @@
 
 ## Съдържание
 - [**Week 1**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%201) - Данни и променливи. Аритметични оператори. Оператори за сравнение.
-- [**Week 2**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%201) - Условни оператори.
+- [**Week 2**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%202) - Условни оператори.
