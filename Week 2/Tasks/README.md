@@ -205,53 +205,6 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
-`Задача 5: Напишете програма, която от стандартния вход получава число r, което се интерпретира като радиуса на окръжност с център (0, 0) в координатна система, и точка с (x, y) координати. Програмата да извежда на стандартния изход дали точката се намира вътре в окръжността, извън нея, или по очертанията ѝ.`
-| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-|-------------------------------------------------------------|-------------------------------------------------------------|
-| 10 2 2                                                          | Inside                                                           |
-| 10 0 10                                                          | On the border                                                           |
-| 10 20 20                                                          | Outside                                                           |
-
-`Решение:`
-```cpp
-#include <iostream>
-#include <cmath>
-using namespace std;
-int main()
-{
-	const double epsilon = 0.0002;
-	double r, x, y;
-	cin >> r >> x >> y;
-	double distance = sqrt(pow(x, 2) + pow(y, 2));
-	if (fabs(distance - r) < epsilon)
-	{
-		cout << "On the border";
-	}
-	else if (distance < r)
-	{
-		cout << "Inside";
-	}
-	else
-	{
-		cout << "Outside";
-	}
-}
-```
-
-> [!TIP]
-> **Inside:** Ако е изпълнено `distance < r`.
->
-> **On the border:** Ако е изпълнено `distance == r`
->
-> **Outside:** Ако е изпълнено `distance > r`.
-
-> [!NOTE]
-> Може да откриете cpp файл тук:
->  [**Task5**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task5.cpp)
-
-<hr style="border-width: 5px !important;">
-
-
 `Задача 6: Напишете програма, която получава от стандартния вход число - година. Програмата да изведе на стандартния изход дали годината е високосна.`
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
@@ -286,5 +239,92 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 7: Напишете програма, която приема от стандартния вход цяло число - температурата градуси в Целзий. Програмата да извежда на стандартния изход температурната категория, следвайки следната скала: Много горещо (т.е. >= 35°C); Горещо (т.е. >= 25°C и < 35°C); Топло (т.е. >= 15°C и < 25°C); Хладно (т.е. >= 5°C и < 15°C); Студено (т.е. < 5°C).`
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int temperature;
+	cin >> temperature;
+	if (temperature >= 35)
+	{
+		cout << "Too hot!";
+	}
+	else if (temperature >= 25 && temperature < 35)
+	{
+		cout << "Hot!";
+	}
+	else if (temperature >= 15 && temperature < 25)
+	{
+		cout << "Warm!";
+	}
+	else if (temperature >= 5 && temperature < 15)
+	{
+		cout << "Cool!";
+	}
+	else if (temperature < 5)
+	{
+		cout << "Cold!";
+	}
+}
+
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task7.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 8: Напишете програма, която приема от стандартния вход цяло положително число. Програмата да извежда деня от седмицата спрямо кратността на числото на 7, т.е. ако числото при делене на 7 дава остатък 0 - Понеделник, остатък 1 - Вторник, и т.н. до остатък 6 - Неделя.`
+
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	int day;
+	cin >> day;
+	if (day % 7 == 0)
+	{
+		cout << "Monday";
+	}
+	else if (day % 7 == 1)
+	{
+		cout << "Tuesday";
+	}
+	else if (day % 7 == 2)
+	{
+		cout << "Wednesday";
+	}
+	else if (day % 7 == 3)
+	{
+		cout << "Thursday";
+	}
+	else if (day % 7 == 4)
+	{
+		cout << "Friday";
+	}
+	else if (day % 7 == 5)
+	{
+		cout << "Saturday";
+	}
+	else if (day % 7 == 6)
+	{
+		cout << "Sunday";
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
 
 
