@@ -437,3 +437,26 @@ int main()
 >  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task10.cpp)
 
 <hr style="border-width: 5px !important;">
+
+## Бонус задачи
+`Задача 1: Да се напише програма, която прочита координатите на две точки и намира разстоянието между тях.`
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double x1, y1, x2, y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+	double distance = sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+	cout << "" << distance << "";
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**TaskBonus1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/TaskBonus1.cpp)
+
+<hr style="border-width: 5px !important;">
+
