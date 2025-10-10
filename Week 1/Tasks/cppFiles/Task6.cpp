@@ -13,3 +13,14 @@ int main()
         cout << "" << false << "";
     }
 }
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    bool isValid = (n % 2 == 0 && n % 3 == 1)
+    cout << "" << isValid << ""; 
+}
