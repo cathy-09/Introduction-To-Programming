@@ -14,3 +14,14 @@ int main()
         cout << "" << false << "";
     }
 }
+
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double a, b, c, d;
+	cin >> a >> b >> c >> d;
+	bool isValid = (b * b == a * c) && (c * c == b * d);
+	cout << "" << isValid << "";
+}
