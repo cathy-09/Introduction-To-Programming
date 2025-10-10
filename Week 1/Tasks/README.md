@@ -460,3 +460,74 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 2: Двама състезатели се движат по една и съща писта в една и съща посока, но с различни скорости. По-бързият тръгва зад по-бавния, на известно разстояние от него. Първоначално програмата приема скоростта на двамата бегачи и на какво разстояние се намират те в първоначалния момент. Трябва да се изчисли след колко часа по-бързият ще настигне по-бавния.`
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double slowerSpeed, fasterSpeed, initialDistance;
+    cin >> slowerSpeed >> fasterSpeed >> initialDistance;
+    if (fasterSpeed <= slowerSpeed)
+    {
+        cout << "Never.";
+    }
+    else
+    {
+        double timeToCatch = initialDistance / (fasterSpeed - slowerSpeed);
+        cout << "" << timeToCatch << "";
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**TaskBonus2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/TaskBonus2.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 3: Да се въведат две числа a и b. Да се изведе по-голямото от двете, без да се използва if.`
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    double a, b;
+    cin >> a >> b;
+    double bigger = (a + b + abs(a - b)) / 2;
+    cout << bigger;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**TaskBonus3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/TaskBonus3.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 4: Да се въведат координати (x1, y1) и (x2, y2) на два върха на правоъгълник. Да се изчисли лицето на правоъгълника.`
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath> // за abs()
+using namespace std;
+int main()
+{
+    double x1, y1, x2, y2;
+    cin >> x1 >> y1 >> x2 >> y2;
+    double width = abs(x2 - x1);
+    double height = abs(y2 - y1);
+    double area = width * height;
+    cout << area;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**TaskBonus4**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/TaskBonus4.cpp)
+
+<hr style="border-width: 5px !important;">
