@@ -13,3 +13,13 @@ int main()
         cout << "" << false << "";
     }
 }
+
+#include <iostream>
+using namespace std;
+int main()
+{
+	int januaryDays;
+	cin >> januaryDays;
+	bool isValid = (januaryDays <= 31);
+	cout << "" << isValid << "";
+}
