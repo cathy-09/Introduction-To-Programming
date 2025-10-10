@@ -327,4 +327,51 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 9: Да се напише прост калкулатор, който поддържа операциите +, -, *, / на две реални числа. От конзолата се прочита число, операция и още едно число и се извежда резултатът.`
 
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a, b;
+	char operation;
+	cout << "`Line => (number a) (operation) (number b) \n";
+	cin >> a >> operation >> b;
+	double sum = a + b;
+	double diff = a - b;	
+	double mult = a * b;
+	double div = 0.0;
+	if (b != 0)
+	{
+		double div = a / b;
+	}
+	else
+	{
+		cout << "Division by zero!";
+	}
+	if (operation == '+')
+	{
+		cout << "= " << sum << "";
+	}
+	else if (operation == '-')
+	{
+		cout << "= " << diff << "";
+	}
+	else if (operation == '*')
+	{
+		cout << "= " << mult << "";
+	}
+	else if (operation == '/')
+	{
+		cout << "= " << div << "";
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task9**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task9.cpp)
+
+<hr style="border-width: 5px !important;">
