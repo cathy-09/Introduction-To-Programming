@@ -204,3 +204,87 @@ int main()
 >  [**Task5**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task5.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 5: Напишете програма, която от стандартния вход получава число r, което се интерпретира като радиуса на окръжност с център (0, 0) в координатна система, и точка с (x, y) координати. Програмата да извежда на стандартния изход дали точката се намира вътре в окръжността, извън нея, или по очертанията ѝ.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 10 2 2                                                          | Inside                                                           |
+| 10 0 10                                                          | On the border                                                           |
+| 10 20 20                                                          | Outside                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	const double epsilon = 0.0002;
+	double r, x, y;
+	cin >> r >> x >> y;
+	double distance = sqrt(pow(x, 2) + pow(y, 2));
+	if (fabs(distance - r) < epsilon)
+	{
+		cout << "On the border";
+	}
+	else if (distance < r)
+	{
+		cout << "Inside";
+	}
+	else
+	{
+		cout << "Outside";
+	}
+}
+```
+
+> [!TIP]
+> **Inside:** Ако е изпълнено `distance < r`.
+>
+> **On the border:** Ако е изпълнено `distance == r`
+>
+> **Outside:** Ако е изпълнено `distance > r`.
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task5**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task5.cpp)
+
+<hr style="border-width: 5px !important;">
+
+
+`Задача 6: Напишете програма, която получава от стандартния вход число - година. Програмата да изведе на стандартния изход дали годината е високосна.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 2000                                                          | Leap                                                           |
+| 1900                                                          | Not Leap                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int year;
+	cin >> year;
+	if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+	{
+		cout << "Leap";
+	}
+	else
+	{
+		cout << "Not Leap";
+	}
+}
+```
+
+> [!TIP]
+> **Упътване:** Една година е високосна, ако се дели на 4 и не се дели на 100 или ако се дели на 400..
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task6**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task6.cpp)
+
+<hr style="border-width: 5px !important;">
+
+
+
