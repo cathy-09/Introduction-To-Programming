@@ -13,3 +13,15 @@ int main()
         cout << "" << false << "";
     }
 }
+
+
+
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a, b, c;
+    cin >> a >> b >> c;
+    bool isValid = (a < 0 || b < 0 || c < 0)
+    cout << "" << isValid << "";
+}
