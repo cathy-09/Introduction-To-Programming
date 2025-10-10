@@ -13,7 +13,7 @@
 | 20                                                          | 1                                                           |
 | 34                                                          | 0                                                           |
 
-`Решение:`
+`Решение 1:`
 ```cpp
 #include <iostream>
 using namespace std;
@@ -29,6 +29,19 @@ int main()
     {
         cout << "" << false << "";
     }
+}
+```
+
+`Решение 2:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	int januaryDays;
+	cin >> januaryDays;
+	bool isValid = (januaryDays <= 31);
+	cout << "" << isValid << "";
 }
 ```
 
@@ -95,7 +108,7 @@ int main()
 | 1 4 5 8                                                          | 0                                                           |
 | 1 10 5 12                                                          | 1                                                           |
 
-`Решение:`
+`Решение 1:`
 ```cpp
 #include <iostream>
 using namespace std;
@@ -111,6 +124,19 @@ int main()
     {
         cout << "" << true << "";
     }
+}
+```
+
+`Решение 2:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	double a, b, c, d;
+	cin >> a >> b >> c >> d;
+	bool isValid = (b < c) || (d < a);
+	cout << "" << isValid << "";
 }
 ```
 
@@ -150,6 +176,21 @@ int main()
 }
 ```
 
+`Решение 1 без if:`
+```cpp
+//pt.1
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double a, b, c, d;
+	cin >> a >> b >> c >> d;
+	bool isValid = (b * b == a * c) && (c * c == b * d);
+	cout << "" << isValid << "";
+}
+```
+
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task5 Pt1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task5Pt1.cpp)
@@ -173,6 +214,21 @@ int main()
     }
 }
 
+```
+
+`Решение 2 без if:`
+```cpp
+//pt.2
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+	double a, b, c, d;
+	cin >> a >> b >> c >> d;
+	bool isValid = (a + d == c + b);
+	cout << "" << isValid << "";
+}
 ```
 
 > [!NOTE]
@@ -203,6 +259,19 @@ int main()
     {
         cout << "" << false << "";
     }
+}
+```
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    bool isValid = (n % 2 == 0 && n % 3 == 1)
+    cout << "" << isValid << ""; 
 }
 ```
 
@@ -237,6 +306,19 @@ int main()
 }
 ```
 
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+    double a, b, c;
+    cin >> a >> b >> c;
+    bool isValid = (a < 0 || b < 0 || c < 0)
+    cout << "" << isValid << "";
+}
+```
+
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%201/Tasks/cppFiles/Task7.cpp)
@@ -259,7 +341,7 @@ int main()
     double x;
     cin >> a >> b >> c;
     cin >> x;
-    double valuePolinom = a * pow(x, 2) + b * x + c;
+    double valuePolinom = a * x * x + b * x + c;
     cout << "" << valuePolinom << "";
 }
 ```
@@ -328,6 +410,24 @@ int main()
         reversed = reversed * 10 + a % 10;
         a = a / 10;
     };
+    cout << "" << reversed << "";
+}
+```
+
+`Решение:`
+```cpp
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    short  a, thousands = 0, hundreds = 0, tens = 0, units = 0, reversed = 0;
+    cin >> a;
+	thousands = a / 1000;
+	hundreds = (a / 100) % 10;
+	tens = (a / 10) % 10;
+	units = a % 10;
+	reversed = units * 1000 + tens * 100 + hundreds * 10 + thousands;
     cout << "" << reversed << "";
 }
 ```
