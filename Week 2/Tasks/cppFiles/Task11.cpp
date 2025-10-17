@@ -1,17 +1,34 @@
-//even - четно
-//odd - нечетно
 #include <iostream>
 using namespace std;
 int main()
 {
-	int number;
-	cin >> number;
-	if (number % 2 == 0)
+	char sybolsAlphabet;
+	cin >> sybolsAlphabet;
+	if (!((sybolsAlphabet >= 'A' && sybolsAlphabet <= 'Z')
+		|| (sybolsAlphabet >= 'a' && sybolsAlphabet <= 'z')))
 	{
-		cout << "even" << endl;
+		cout << "Invalid input!";
+		return 0;
 	}
 	else
 	{
-		cout << "odd" << endl;
+		switch (sybolsAlphabet)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			cout << "vowel";
+			break;
+		default:
+			cout << "consonant";
+			break;
+		}
 	}
 }
