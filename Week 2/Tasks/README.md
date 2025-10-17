@@ -375,3 +375,36 @@ int main()
 >  [**Task9**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task9.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 10: Да се напише програма, която проверява дали въведено цяло число е четно или нечетно. Примери:`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 3                                                          | odd                                                           |
+| 36                                                          | even                                                           |
+
+`Решение:`
+```cpp
+//even - четно
+//odd - нечетно
+#include <iostream>
+using namespace std;
+int main()
+{
+	int number;
+	cin >> number;
+	if (number % 2 == 0)
+	{
+		cout << "even" << endl;
+	}
+	else
+	{
+		cout << "odd" << endl;
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task10.cpp)
+
+<hr style="border-width: 5px !important;">
