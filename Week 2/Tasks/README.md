@@ -376,7 +376,7 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
-`Задача 10: Да се напише програма, която проверява дали въведено цяло число е четно или нечетно. Примери:`
+`Задача 10: Да се напише програма, която проверява дали въведено цяло число е четно или нечетно.`
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
 | 3                                                          | odd                                                           |
@@ -406,5 +406,55 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task10.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 11: Да се напише програма, която проверява дали въведена от потребителя букв ае гласна(a, e, i, o, u и сътветно A, E, I, O, U) или съгласна. (Използвайте switch-case).`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| a                                                          | vowel                                                           |
+| F                                                          | consonant                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+using namespace std;
+int main()
+{
+	char sybolsAlphabet;
+	cin >> sybolsAlphabet;
+	if (!((sybolsAlphabet >= 'A' && sybolsAlphabet <= 'Z') 
+		|| (sybolsAlphabet >= 'a' && sybolsAlphabet <= 'z')))
+	{
+		cout << "Invalid input!";
+		return 0;
+	}
+	else
+	{
+		switch (sybolsAlphabet)
+		{
+		case 'a':
+		case 'e':
+		case 'i':
+		case 'o':
+		case 'u':
+		case 'A':
+		case 'E':
+		case 'I':
+		case 'O':
+		case 'U':
+			cout << "vowel";
+			break;
+		default:
+			cout << "consonant";
+			break;
+		}
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task11**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%202/Tasks/cppFiles/Task11.cpp)
 
 <hr style="border-width: 5px !important;">
