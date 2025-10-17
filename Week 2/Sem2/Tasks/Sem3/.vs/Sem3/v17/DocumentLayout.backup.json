@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UniStaff\\Sem3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8516837C-361B-4A62-A8E1-91CE4CD99967}|Sem3\\Sem3.vcxproj|D:\\UniStaff\\Sem3\\Sem3\\Sem3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8516837C-361B-4A62-A8E1-91CE4CD99967}|Sem3\\Sem3.vcxproj|solutionrelative:Sem3\\Sem3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sem3.cpp",
+              "DocumentMoniker": "D:\\UniStaff\\Sem3\\Sem3\\Sem3.cpp",
+              "RelativeDocumentMoniker": "Sem3\\Sem3.cpp",
+              "ToolTip": "D:\\UniStaff\\Sem3\\Sem3\\Sem3.cpp*",
+              "RelativeToolTip": "Sem3\\Sem3.cpp*",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAAwJ8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-17T05:30:30.944Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
