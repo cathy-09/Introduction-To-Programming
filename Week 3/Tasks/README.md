@@ -66,3 +66,10 @@ int main()
 	}
 }
 ```
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task1.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 2: Напишете програма, която приема от стандартния вход цели числа, докато не се въведат три числа, които са кратни на 7. Програмата да изведе на стандартния изход сбора на тези три числа.`
