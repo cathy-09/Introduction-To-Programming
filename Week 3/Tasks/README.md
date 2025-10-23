@@ -301,3 +301,49 @@ int main()
 >  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task7.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 8: Напишете програма, която приема от стандартния вход цяло число и извежда на стандартния изход броя на цифрите му.`
+
+`Решение:`
+```cpp
+#include <iostream>
+int main()
+{
+	int  number, temp = 0, counter = 0;;
+	std::cin >> number;
+	while (number != 0)
+	{
+		temp = temp * 10 + number % 10;
+		number = number / 10;
+		counter++;
+	}
+	std::cout << "Count: " << counter << std::endl;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 9: Напишете програма, която въвежда от стандартния вход две цели положителни числа m – брой редове и n. На нечетен номер на ред се печатат n тиренца, а на четен n звездички, заградени от симола ‘|’ в началото и края на всеки ред.`
+
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 4 6                                                          | |------|
+|******|
+|------|
+|******|                                                           |
+
+`Решение:`
+```cpp
+
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
+
