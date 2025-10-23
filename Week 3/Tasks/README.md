@@ -387,9 +387,9 @@ int main()
 |-------------------------------------------------------------|-------------------------------------------------------------|
 | 5                                                          | виж картинката                                                           |
 
-```
-<img width="87" height="186" alt="image" src="https://github.com/user-attachments/assets/4ee14616-d947-4a49-99b9-1ad1de1ff7ab" />
-```
+> [!TIP]
+> <img width="87" height="186" alt="image" src="https://github.com/user-attachments/assets/4ee14616-d947-4a49-99b9-1ad1de1ff7ab" />
+
 
 `Решение:`
 ```cpp
