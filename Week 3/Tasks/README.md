@@ -431,3 +431,33 @@ int main()
 >  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task10.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 11: Напишете програма, която въвежда от стандартния вход цяло положително число n и отпечатва на стандартния изход следната пирамида от доларчета`
+
+> [!TIP]
+> <img width="446" height="147" alt="image" src="https://github.com/user-attachments/assets/4423aa10-bf9e-4d55-bc16-3447e5c6fedb" />
+
+`Решение:`
+```cpp
+#include <iostream>
+int main()
+{
+	int n = 0;
+	std::cout << "Enter n: ";
+	std::cin >> n;
+	for (int i = 1; i <= n; i++)
+	{
+		for (int p = 1; p <= i; p++)
+		{
+			std::cout << "$ ";
+		}
+		std::cout << std::endl;
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task11**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task11.cpp)
+
+<hr style="border-width: 5px !important;">
