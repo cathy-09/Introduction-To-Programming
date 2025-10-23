@@ -103,6 +103,7 @@ int main()
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
 | 1234                                                          | 4321                                                           |
+
 `Решение:`
 ```cpp
 #include <iostream>
@@ -119,11 +120,9 @@ int main()
 	{
 		while (number != 0)
 		{
-
-
 			reversed = reversed * 10 + number % 10;
 			number = number / 10;
-		};
+		}
 		std::cout << "" << reversed << "";
 	}
 }
@@ -131,3 +130,5 @@ int main()
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task3.cpp)
+
+<hr style="border-width: 5px !important;">
