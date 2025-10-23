@@ -381,3 +381,23 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 10: Напишете програма, която въвежда от стандартния вход цяло положително число n и отпечатва на стандартния изход такова дърво с подходящ брой интервали спрямо въведено число n.`
+
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 5                                                          | виж картинката                                                           |
+
+```
+<img width="87" height="186" alt="image" src="https://github.com/user-attachments/assets/4ee14616-d947-4a49-99b9-1ad1de1ff7ab" />
+```
+
+`Решение:`
+```cpp
+
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task10.cpp)
+
+<hr style="border-width: 5px !important;">
