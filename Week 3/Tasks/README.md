@@ -93,3 +93,13 @@ int main()
 	std::cout << "Sum of first 3 num devide by 7: " << sum << std::endl;
 }
 ```
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task2.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 3: Напишете програма, която приема от стандартния вход цяло число, което не завършва на 0. Програмата да изведе на стандартния изход огледалното число.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 1234                                                          | 4321                                                           |
