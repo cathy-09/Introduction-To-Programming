@@ -73,7 +73,7 @@ int main()
 <hr style="border-width: 5px !important;">
 
 `Задача 2: Напишете програма, която приема от стандартния вход цели числа, докато не се въведат три числа, които са кратни на 7. Програмата да изведе на стандартния изход сбора на тези три числа.`
-`Решение 2:`
+`Решение:`
 ```cpp
 #include <iostream>
 
@@ -103,3 +103,31 @@ int main()
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
 | 1234                                                          | 4321                                                           |
+`Решение:`
+```cpp
+#include <iostream>
+
+int main()
+{
+	short  number, reversed = 0;
+	std::cin >> number;
+	if (number % 10 == 0)
+	{
+		std::cout << "The number has zero.";
+	}
+	else
+	{
+		while (number != 0)
+		{
+
+
+			reversed = reversed * 10 + number % 10;
+			number = number / 10;
+		};
+		std::cout << "" << reversed << "";
+	}
+}
+```
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task3.cpp)
