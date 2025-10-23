@@ -259,3 +259,45 @@ int main()
 >  [**Task6**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task6.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 7: Напишете програма, която приема от стандартния вход цяло число и извежда на стандартния изход дали то е просто.`
+
+`Решение:`
+```cpp
+#include <iostream>
+
+int main() 
+{
+	int num, countDivider = 0;
+	std::cout << "Enter a num: ";
+	std::cin >> num;
+	if (num <= 1)
+	{
+		std::cout << "Num is not prime" << std::endl;
+	}
+	else
+	{
+		for (int i = 1; i <= num; i++)
+		{
+			if (num % i == 0)
+			{
+				countDivider++;
+			}
+		}
+		if (countDivider == 2)
+		{
+			std::cout << "Congratulations. Num is prime." << std::endl;
+		}
+		else
+		{
+			std::cout << "Num is not prime" << std::endl;
+		}
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFiles/Task7.cpp)
+
+<hr style="border-width: 5px !important;">
