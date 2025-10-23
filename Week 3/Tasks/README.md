@@ -331,10 +331,14 @@ int main()
 
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
-| 4 6                                                          | |------|
+| 4 6                                                          | виж картинката                                                           |
+
+```
+|------|
 |******|
 |------|
-|******|                                                           |
+|******|
+```
 
 `Решение:`
 ```cpp
