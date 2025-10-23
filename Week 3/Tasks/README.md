@@ -73,3 +73,23 @@ int main()
 <hr style="border-width: 5px !important;">
 
 `Задача 2: Напишете програма, която приема от стандартния вход цели числа, докато не се въведат три числа, които са кратни на 7. Програмата да изведе на стандартния изход сбора на тези три числа.`
+`Решение 2:`
+```cpp
+#include <iostream>
+
+int main()
+{
+	int const TARGET_COUNT = 3;
+	int num, sum = 0, count = 0;
+	while (count != TARGET_COUNT)
+	{
+		std::cin >> num;
+		if (num % 7 == 0)
+		{
+			sum = sum + num;
+			count++;
+		}
+	}
+	std::cout << "Sum of first 3 num devide by 7: " << sum << std::endl;
+}
+```
