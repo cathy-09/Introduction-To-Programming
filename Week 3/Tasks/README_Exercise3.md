@@ -39,3 +39,6 @@ int main()
 > [!NOTE]
 > Може да откриете допълнителните задачи тук:
 >  [**Task1Exercise3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFilesExercise3/Task1Exercise3.cpp)
+
+<hr style="border-width: 5px !important;">
+
