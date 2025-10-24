@@ -42,3 +42,34 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 2: Да се прочетe от конзолата естествено число и да се намери факториелът му.`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 5                                                          | Factorial: 120                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+int main()
+{
+	int n;
+	long factorial = 1;
+	std::cin >> n;
+	if (n < 0) 
+	{
+		std::cout << "The number must be positive!" << std::endl;
+		return 1;
+	}
+	for (int i = 1; i <= n; i++) 
+	{
+		factorial *= i;
+	}
+	std::cout << "Factorial: " << factorial << std::endl;
+}
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task2Exercise3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFilesExercise3/Task2Exercise3.cpp)
+
+<hr style="border-width: 5px !important;">
