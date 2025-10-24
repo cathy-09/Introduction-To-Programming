@@ -73,3 +73,38 @@ int main()
 >  [**Task2Exercise3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFilesExercise3/Task2Exercise3.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 3: Да се напише програма, която прочита естествено число N и пресмята сборът 1 + (1 + 2) + (1 + 2 + 3) + ... + (1 + 2 + ... + N).`
+| Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|-------------------------------------------------------------|-------------------------------------------------------------|
+| 5                                                          | 35                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+int main()
+{
+	int n;
+	int sum = 0;
+	std::cin >> n;
+	if (n < 1) 
+	{
+		std::cout << "The number must be positive!" << std::endl;
+		return 1;
+	}
+	for (int i = 1; i <= n; i++) 
+	{
+		for (int j = 1; j <= i; j++) 
+		{
+			sum += j;
+		}
+	}
+	std::cout << sum << std::endl;
+}
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task3Exercise3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFilesExercise3/Task3Exercise3.cpp)
+
+<hr style="border-width: 5px !important;">
