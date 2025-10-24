@@ -4,7 +4,7 @@
 `Задача 1: Да се напише програма, която чете от конзолата 2 цели числа n и m в интервала [0, 256] и изписва символите на всички ASCII кодове в интервала [n, m]`
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
-| Start: 65 \ End: 75                                                          | 65 --> A  
+| Start: 65 <br/> End: 75                                                          | 65 --> A  
 66 --> B  
 67 --> C  
 68 --> D  
