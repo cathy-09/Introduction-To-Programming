@@ -5,3 +5,37 @@
 | Вход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Изход&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
 |-------------------------------------------------------------|-------------------------------------------------------------|
 | Start: 65 <br/> End: 75                                                          | 65 --> A <br/> 66 --> B <br/> 67 --> C <br/> 68 --> D <br/> 69 --> E <br/>70 --> F <br/> 71 --> G <br/> 72 --> H <br/> 73 --> I <br/> 74 --> J <br/> 75 --> K                                                           |
+
+`Решение:`
+```cpp
+#include <iostream>
+
+int main()
+{
+	int n, m, temp = 0;
+	std::cout << "Start: ";
+	std::cin >> n;
+	std::cout << "End: ";
+	std::cin >> m;
+	if (n < 0 || n > 256 || m < 0 || m > 256) 
+	{
+		std::cout << "Wrong intervals. Enter number in intervals [0, 256]!" << std::endl;
+		return 1;
+	}
+	if (n > m) 
+	{
+		temp = n;
+		n = m;
+		m = temp;
+	}
+	for (int i = n; i <= m; i++) 
+	{
+		std::cout << i << " --> " << (char)i << std::endl;
+	}
+}
+
+```
+
+> [!NOTE]
+> Може да откриете допълнителните задачи тук:
+>  [**Task1Exercise3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%203/Tasks/cppFilesExercise3/Task1Exercise3.cpp)
