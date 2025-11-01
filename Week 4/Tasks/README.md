@@ -460,3 +460,168 @@ bool isDivisible(int num1, int num2)
 >  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%204/Tasks/cppFiles/Task7.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 8: Напишете функция, която приема три цели неотрицателни числа - ден, месец, и година. Функцията да проверява дали тези три числа представляват валидна дата. Внимавайте с високосни години!`
+
+```cpp
+#include <iostream>
+using namespace std;
+bool isLeapYear(int);
+bool isValidDate(int, int, int);
+int main()
+{
+	int day = 0, month = 0, year = 0;
+	cout << "Enter day: ";
+	cin >> day;
+	if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter a number: ";
+	}
+	cout << "Enter month: ";
+	cin >> month;
+	if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter a number: ";
+	}
+	cout << "Enter year: ";
+	cin >> year;
+	if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter a number: ";
+	}
+	bool result = isValidDate(day, month, year);
+	if (result)
+	{
+		cout << "Valid." << endl;
+	}
+	else
+	{
+		cout << "Valid." << endl;
+	}
+}
+bool isLeapYear(int year)
+{
+	if (year % 4 != 0)
+	{
+		return false;
+	}
+	else if (year % 100 != 0)
+	{
+		return true;
+	}
+	else if (year % 400 != 0)
+	{
+		return false;
+	}
+	else
+	{
+		return true;
+	}
+}
+bool isValidDate(int day, int month, int year)
+{
+	if (year < 0 || month < 1 || month > 12 || day < 1)
+	{
+		return false;
+	}
+	int daysInMonth = 0;
+
+	switch (month)
+	{
+	case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+		daysInMonth = 31;
+		break;
+	case 4: case 6: case 9: case 11:
+		daysInMonth = 30;
+		break;
+	case 2:
+		if (isLeapYear(year))
+		{
+			daysInMonth = 29;
+		}
+		else
+		{
+			daysInMonth = 28;
+		}
+		break;
+	default:
+		return false;
+	}
+	if (day > daysInMonth)
+	{
+		return false;
+	}
+	return true;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%204/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 9: Напишете функция, която приема цяло неотрицателно число и проверява дали е "перфектно" - едно число е "перфектно", ако сборът на множителите му (включително 1, но без самото число) е равен на числото, например: 6 е перфектно число, защото множителите му са 1, 2, и 3, и 1 + 2 + 3 = 6. Напишете програма, която приема две цели неотрицателни числа и извежда всички перфектни числа в интервала от първото до второто число включително.`
+
+```cpp
+#include <iostream>
+using namespace std;
+bool isPerfect(int);
+int main()
+{
+	int start = 0, end = 0;
+	cout << "Enter start number: ";
+	cin >> start;
+	if (cin.fail() || start < 0)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter a not negative number: ";
+	}
+	cout << "Enter end number: ";
+	cin >> end;
+	if (cin.fail() || end < 0)
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter a not negative number: ";
+	}
+	cout << "Perfect numbers in the range: ";
+	for (int i = start; i <= end; ++i)
+	{
+		if (isPerfect(i))
+		{
+			cout << i << " ";
+		}
+	}
+	cout << endl;
+}
+bool isPerfect(int number)
+{
+	if (number <= 1)
+	{
+		return false;
+	}
+	int sum = 0;
+	for (int i = 1; i <= number / 2; ++i)
+	{
+		if (number % i == 0)
+		{
+			sum += i;
+		}
+	}
+	return sum == number;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task9**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%204/Tasks/cppFiles/Task9.cpp)
+
+<hr style="border-width: 5px !important;">
