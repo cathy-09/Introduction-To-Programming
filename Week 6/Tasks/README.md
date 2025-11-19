@@ -415,3 +415,269 @@ bool multiplyMatrices(int matrixA[ROWS1][COLS1], int matrixB[ROWS2][COLS2], int 
 >  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task7.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 8: Да се напише програма, която проверява дали квадратна матрица от целочислени числа е симетрична(дали е огледална спрямо главния диагонал). Максималният размер на матрицата е 50х50.`
+
+```cpp
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 50;
+bool isSymmetricMatrix(int matrix[MAX_SIZE][MAX_SIZE], int);
+
+int main()
+{
+	int matrix[MAX_SIZE][MAX_SIZE];
+	int n;
+	cin >> n;
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = 0; j < n; ++j)
+		{
+			cin >> matrix[i][j];
+		}
+	}
+	if (isSymmetricMatrix(matrix, n))
+	{
+		cout << "symmetrical." << endl;
+	}
+	else
+	{
+		cout << "asymmetrical." << endl;
+	}
+}
+
+bool isSymmetricMatrix(int matrix[MAX_SIZE][MAX_SIZE], int n)
+{
+	bool isSymmetric = true;
+	for (int i = 0; i < n; ++i)
+	{
+		for (int j = i + 1; j < n; ++j)
+		{
+			if (matrix[i][j] != matrix[j][i])
+			{
+				isSymmetric = false;
+				break;
+			}
+		}
+		if (!isSymmetric)
+		{
+			break;
+		}
+	}
+	if (isSymmetric)
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 9: Да се напише програма, която обръща дадена матрица от целочислени числа огледално (ляво ↔ дясно). Максималният размер на матрицата е 50х50.`
+
+```cpp
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 50;
+void mirrorMatrix(int matrix[MAX_SIZE][MAX_SIZE], int, int);
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int, int);
+void mySwap(int&, int&);
+
+int main()
+{
+    int matrix[MAX_SIZE][MAX_SIZE];
+    int rows, cols;
+    cin >> rows >> cols;
+    if (cin.fail())
+    {
+        cin.clear();
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        cout << "Invalid input. Enter an number: ";
+    }
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < cols; ++j)
+        {
+            cin >> matrix[i][j];
+        }
+    }
+    mirrorMatrix(matrix, rows, cols);
+	printMatrix(matrix, rows, cols);
+}
+
+void mirrorMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
+{
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < cols / 2; ++j)
+        {
+            mySwap(matrix[i][j], matrix[i][cols - j - 1]);
+        }
+    }
+}
+
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
+{
+    for (int i = 0; i < rows; ++i)
+    {
+        for (int j = 0; j < cols; ++j)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+void mySwap(int& a, int& b)
+{
+    int temp = a;
+    a = b;
+    b = temp;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task9**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task9.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 10: Да се напише програма, която обръща дадена матрица огледално от целочислени числа (горе ↔ долу). Максималният размер на матрицата е 50х50.`
+
+```cpp
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 50;
+void mirrorMatrix(int matrix[MAX_SIZE][MAX_SIZE], int, int);
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int, int);
+void mySwap(int&, int&);
+
+int main()
+{
+	int matrix[MAX_SIZE][MAX_SIZE];
+	int rows, cols;
+	cin >> rows >> cols;
+	if (cin.fail())
+	{
+		cin.clear();
+		cin.ignore(numeric_limits<streamsize>::max(), '\n');
+		cout << "Invalid input. Enter an number: ";
+	}
+	for (int i = 0; i < rows; ++i)
+	{
+		for (int j = 0; j < cols; ++j)
+		{
+			cin >> matrix[i][j];
+		}
+	}
+	mirrorMatrix(matrix, rows, cols);
+	printMatrix(matrix, rows, cols);
+}
+
+void mirrorMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
+{
+	for (int i = 0; i < rows / 2; ++i)
+	{
+		for (int j = 0; j < cols; ++j)
+		{
+			mySwap(matrix[i][j], matrix[rows - i - 1][j]);
+		}
+	}
+}
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int rows, int cols)
+{
+	for (int i = 0; i < rows; ++i)
+	{
+		for (int j = 0; j < cols; ++j)
+		{
+			cout << matrix[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
+void mySwap(int& a, int& b)
+{
+	int temp = a;
+	a = b;
+	b = temp;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task10**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task10.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 11: Да се напише програма, която завърта квадратна матрица от целочислени числа на 90 градуса по часовниковата стрелка. Максималният размер на матрицата е 50х50.`
+
+```cpp
+#include <iostream>
+using namespace std;
+
+const int MAX_SIZE = 50;
+void rotateMatrix90Clockwise(int matrix[MAX_SIZE][MAX_SIZE], int n);
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int n);
+
+int main()
+{
+    int matrix[MAX_SIZE][MAX_SIZE];
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            cin >> matrix[i][j];
+        }
+    }
+    rotateMatrix90Clockwise(matrix, n);
+	cout << endl;
+	printMatrix(matrix, n);
+}
+
+void rotateMatrix90Clockwise(int matrix[MAX_SIZE][MAX_SIZE], int n)
+{
+    for (int j = 0; j < n / 2; j++)
+    {
+        int first = j;
+        int last = n - j - 1;
+        for (int i = first; i < last; i++)
+        {
+            int move = i - first;
+            int top = matrix[first][i];
+            matrix[first][i] = matrix[last - move][first];
+            matrix[last - move][first] = matrix[last][last - move];
+            matrix[last][last - move] = matrix[i][last];
+            matrix[i][last] = top; 
+        }
+    }
+}
+void printMatrix(int matrix[MAX_SIZE][MAX_SIZE], int n)
+{
+    for (int i = 0; i < n; ++i)
+    {
+        for (int j = 0; j < n; ++j)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task11**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task11.cpp)
+
+<hr style="border-width: 5px !important;">
