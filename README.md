@@ -10,3 +10,5 @@
 - [**Week 2**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%202) - Условни оператори.
 - [**Week 3**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%203) - Цикли.
 - [**Week 4**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%204) - Функции.
+- [**Week 5**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%205) - Едномерни масиви.
+- [**Week 6**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%206) - Многомерен/Двумерен масив.
