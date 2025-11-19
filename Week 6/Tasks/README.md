@@ -339,6 +339,8 @@ int main()
 
 <hr style="border-width: 5px !important;">
 
+`Задача 7: Напишете функция, която приема две матрици и размерите им и ги умножава. Направете проверки дали умножението е възможно.`
+
 ```cpp
 #include <iostream>
 using namespace std;
