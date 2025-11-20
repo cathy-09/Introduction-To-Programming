@@ -44,6 +44,12 @@ void sumOfRows(int matrix[ROWS][COLS], int rows, int cols)
 }
 ```
 
+> [!TIP]
+> АЛГОРИТЪМ
+> За всеки ред в матрицата се инициализира sum = 0.
+> Обхождат се всички елементи на реда (затова е по колони вторият цикъл) и ги прибавяме към sum.
+> След приключване на даден ред извежда сумата на реда.
+
 > [!NOTE]
 > Може да откриете cpp файл тук:
 >  [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%206/Tasks/cppFiles/Task1.cpp)
