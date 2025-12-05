@@ -39,3 +39,41 @@ void findMaxElementAddress(int* arr, int size) {
 	std::cout << "Address of max: " << maxPtr << std::endl;
 }
 ```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task1**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task1.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 2: Напишете функция, която приема масив от цели числа (и размера му) и извежда на стандартния изход елементите на масива, без да използва оператора [].`
+
+`Решение:`
+```cpp
+#include <iostream>
+void printArray(int* arr, int size);
+
+int main()
+{
+    int arr[] = { 1, 2, 3, 4, 5 };
+    int size = sizeof(arr) / sizeof(arr[0]);
+    printArray(arr, size);
+}
+
+void printArray(int* arr, int size)
+{
+    int* pointer = arr;
+    while (pointer < arr + size)
+    {
+        std::cout << *pointer << " ";
+        pointer++;
+    }
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task2**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task2.cpp)
+
+<hr style="border-width: 5px !important;">
+
