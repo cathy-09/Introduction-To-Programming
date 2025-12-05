@@ -12,3 +12,6 @@
 - [**Week 4**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%204) - Функции.
 - [**Week 5**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%205) - Едномерни масиви.
 - [**Week 6**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%206) - Многомерен/Двумерен масив.
+- [**Week 7**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%204) - Масиви.
+- [**Week 8**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%205) - Бройни системи и побитови операции
+- [**Week 9**](https://github.com/cathy-09/Introduction-To-Programming/tree/main/Week%206) - Указатели. Символни низове.
