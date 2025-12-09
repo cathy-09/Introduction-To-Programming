@@ -77,3 +77,65 @@ void printArray(int* arr, int size)
 
 <hr style="border-width: 5px !important;">
 
+`Задача 3: Напишете функция, която приема масив от символи. Масивът трябва да съдържа само малки латински букви - ако това не е така, върнете лъжа. Иначе, функцията да връща дали масивът съдържа само уникални букви, тоест дали всеки символ от масива се среща най-много по веднъж.`
+
+`Решение:`
+```cpp
+#include <iostream>
+int const MAX_SIZE = 100;
+bool isLowercase(char arr[]);
+bool hasUniqueChars(char arr[]);
+
+int main()
+{
+	char arr[MAX_SIZE];
+	std::cin.getline(arr, MAX_SIZE);
+	if (!isLowercase(arr))
+	{
+		std::cout << "False";
+	}
+	else
+	{
+		if (hasUniqueChars(arr))
+		{
+			std::cout << "It Has.";
+		}
+		else
+		{
+			std::cout << "It Does Not Have.";
+		}
+	}
+}
+
+bool isLowercase(char arr[])
+{
+	for (int i = 0; arr[i] != '\0'; i++)
+	{
+		if (arr[i] < 'a' || arr[i] > 'z')
+		{
+			return false;
+		}
+	}
+	return true;
+}
+bool hasUniqueChars(char arr[])
+{
+	for (int i = 0; arr[i] != '\0'; i++)
+	{
+		for (int j = i + 1; arr[j] != '\0'; j++)
+		{
+			if (arr[i] == arr[j])
+			{
+				return false;
+			}
+		}
+	}
+	return true;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task3.cpp)
+
+<hr style="border-width: 5px !important;">
