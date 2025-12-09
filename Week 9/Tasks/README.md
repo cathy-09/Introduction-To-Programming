@@ -323,3 +323,88 @@ void compress(char sourse[], char destination[])
 >  [**Task7**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task7.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 8: Напишете функция, която приема 2 символни низа и проверява дали втория низ е префикс на първия, тоест дали втория низ е началото на първия.`
+
+`Решение:`
+```cpp
+#include <iostream>
+const int MAX_SIZE = 100;
+bool isPrefix(const char* str, const char* prefix);
+
+int main()
+{
+    char str[MAX_SIZE];
+    char prefix[MAX_SIZE];
+    std::cin.getline(str, MAX_SIZE);
+    std::cin.getline(prefix, MAX_SIZE);
+    if (isPrefix(str, prefix))
+    {
+		std::cout << true << std::endl;
+    }
+    else
+    {
+        std::cout << false << std::endl;
+    }
+}
+
+bool isPrefix(const char* str, const char* prefix)
+{
+    while (*prefix != '\0')
+    {
+        if (*str != *prefix)
+        {
+            return false;
+        }
+        str++;
+        prefix++;
+    }
+    return true;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task8**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task8.cpp)
+
+<hr style="border-width: 5px !important;">
+
+`Задача 9: Задача 9: Напишете функция, която приема символен низ, който трябва да е съставен само от символите от '0' до '9' - ако това не е така, върнете подходящ код за невалидни данни. Ако входните данни са валидни, функцията да връща числото, което е представено като симолен низ, тоест: при вход "1234" функцията трябва да връща числото 1234; при вход "а234" функцията трябва да връща код за недалидни данни (стандартно това е -1).`
+
+`Решение:`
+```cpp
+#include <iostream>
+int const MAX_SIZE = 100;
+int toNumber(char str[]);
+
+int main()
+{
+    char str[MAX_SIZE];
+    std::cin.getline(str, MAX_SIZE);
+
+    int num = toNumber(str);
+    std::cout << num;
+}
+int toNumber(char str[])
+{
+    int result = 0;
+    int i = 0;
+    while (str[i] != '\0')
+    {
+        if (str[i] < '0' || str[i] > '9')
+        {
+            return -1;
+        }
+        result = result * 10 + (str[i] - '0');
+        i++;
+    }
+
+    return result;
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task9**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task9.cpp)
+
+<hr style="border-width: 5px !important;">
