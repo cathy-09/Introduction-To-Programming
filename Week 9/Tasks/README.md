@@ -139,3 +139,38 @@ bool hasUniqueChars(char arr[])
 >  [**Task3**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task3.cpp)
 
 <hr style="border-width: 5px !important;">
+
+`Задача 4: Напишете функция, която приема символен низ и го извежда обърнат на стандартния изход.`
+
+`Решение:`
+```cpp
+#include <iostream>
+int const MAX_SIZE = 100;
+void reversedString(char str[]);
+
+int main()
+{
+	char str[MAX_SIZE];
+	std::cin.getline(str, MAX_SIZE);
+	reversedString(str);
+}
+
+void reversedString(char str[])
+{
+	int length = 0;
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	for (int i = length - 1; i >= 0; i--)
+	{
+		std::cout << str[i];
+	}
+}
+```
+
+> [!NOTE]
+> Може да откриете cpp файл тук:
+>  [**Task4**](https://github.com/cathy-09/Introduction-To-Programming/blob/main/Week%209/Tasks/cppFiles/Task4.cpp)
+
+<hr style="border-width: 5px !important;">
